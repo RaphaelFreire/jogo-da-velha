@@ -1,15 +1,9 @@
 import React from "react";
-import Logo from "./objects/logo";
-import Sobre from "./objects/Sobre";
-import Menu from "./objects/Menu";
+import Header from './components/Header';
 
 function App() {
 	return (
-		<>
-			<Logo />
-			<Sobre />
-			<Menu />
-		</>
+		<Header />		
 	);
 }
 
