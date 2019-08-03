@@ -1,12 +1,14 @@
 import React from "react";
-import Sobre from "./objects/Sobre";
 import Logo from "./objects/logo";
+import Sobre from "./objects/Sobre";
+import Menu from "./objects/Menu";
 
 function App() {
 	return (
 		<>
 			<Logo />
 			<Sobre />
+			<Menu />
 		</>
 	);
 }
