@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 const Sobre = () => {
-          return (<button href="#" className="sobre">Sobre</button>)
+          return (<a href="/" className="sobre">Sobre</a>)
 }
 
 export default Sobre
