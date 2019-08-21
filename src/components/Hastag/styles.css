@@ -1,6 +1,18 @@
+.card {
+	padding: 15px;
+}
+
 .hashtag {
 	display: grid;
-	grid-template-columns: 33.333% 33.333% 33.333%;
-	grid-template-rows: 33.333% 33.333% 33.333%;
 	height: 100%;
+	background-color: var(--color-third);
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 3px;
+}
+
+.hashtag > .item {
+	background-color: var(--color-zero);
+	display: flex;
+	justify-content: center;
 }
