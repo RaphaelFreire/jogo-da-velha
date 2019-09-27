@@ -1,5 +1,6 @@
 import React from "react";
+import "./styles.css";
 
-const About = () => <article>Raphael Freire</article>;
+const About = () => <article class="about" />;
 
 export default About;
