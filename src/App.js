@@ -3,9 +3,7 @@ import "./App.css";
 
 import Checkbox from "./objects/Checkbox";
 import About from "./objects/About";
-import LogoCollab from "./objects/LogoCollab"
-import AboutLink from "./objects/AboutLink";
-import IconClose from "./objects/IconClose";
+import HeaderInternal from "./components/HeaderInternal"
 import Header from "./components/Header";
 import Hashtag from "./components/Hastag";
 
@@ -20,9 +18,7 @@ const App = () => (
       content="Mostrar eventos"
     />
     <About>
-		<LogoCollab />
-      <AboutLink className="-light" />
-      <IconClose />
+		<HeaderInternal />
     </About>
   </main>
 );
