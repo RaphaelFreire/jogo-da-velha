@@ -5,8 +5,8 @@
   height: 24px;
 }
 
-.icon-close::before {
-  display: inline-block;
+.icon-close::before,
+.icon-close::after {
   content: "";
   width: 32px;
   height: 4px;
@@ -14,20 +14,15 @@
   border-radius: 2px;
   position: absolute;
   top: -1px;
+}
+
+.icon-close::before {
   left: 2px;
   transform: rotate(45deg);
   transform-origin: left top;
 }
 
 .icon-close::after {
-  display: inline-block;
-  content: "";
-  width: 32px;
-  height: 4px;
-  background-color: var(--color-zero);
-  border-radius: 2px;
-  position: absolute;
-  top: -1px;
   right: 2px;
   transform: rotate(-45deg);
   transform-origin: right top;
