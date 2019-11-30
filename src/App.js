@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
 
-import Checkbox from "./objects/Checkbox";
-import About from "./objects/About";
+import Input from "./objects/InputCheckbox";
+import LayerDark from "./objects/LayerDark";
 import HeaderInternal from "./components/HeaderInternal";
-import Header from "./components/Header";
-import Hashtag from "./components/Hastag";
+import HeaderGame from "./components/HeaderGame";
+import HashtagGame from "./components/HastagGame";
 import ProfileUser from "./components/ProfileUser";
 
 const App = () => {
@@ -16,18 +16,13 @@ const App = () => {
 
   return (
     <main className="app">
-      <Header onClick={handleClickAdd} />
-      <Hashtag />
-      <Checkbox
-        id="show"
-        value="show"
-        type="checkbox"
-        content="Mostrar eventos"
-      />
-      <About className={activeAbout}>
-        <HeaderInternal onClick={handleClickRemove}/>
+      <HeaderGame onClick={handleClickAdd} />
+      <HashtagGame />
+      <Input id="show" value="show" type="checkbox" content="Mostrar eventos" />
+      <LayerDark className={activeAbout}>
+        <HeaderInternal onClick={handleClickRemove} />
         <ProfileUser />
-      </About>
+      </LayerDark>
     </main>
   );
 };

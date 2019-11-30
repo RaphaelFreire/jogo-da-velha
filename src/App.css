@@ -1,18 +1,16 @@
 .app {
-	text-align: center;
+  text-align: center;
 }
 
-.app > .header {
-	width: 90vw;
-	margin: 0 auto 85px;
-	margin-left: auto;
-	margin-right: auto;
+.app > .header-game {
+  width: 90vw;
+  margin: 0 auto 85px;
 }
 
-.app > .card {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 90vw;
-	height: 90vw;
-	margin-bottom: 40px;
+.app > .card-game {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90vw;
+  height: 90vw;
+  margin-bottom: 40px;
 }
