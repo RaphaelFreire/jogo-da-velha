@@ -3,7 +3,7 @@ import playerX from "../../img/player-x.png";
 import playerO from "../../img/player-o.png";
 import "./styles.css";
 
-const PlayerGame = ({ player }) => {
+const PlayerGame = ({ player = "" }) => {
   const players = [];
 
   players["x"] = playerX;
@@ -11,7 +11,7 @@ const PlayerGame = ({ player }) => {
 
   return (
     <button className="player-game">
-      <img src={players[player]} alt={`Jogador ${player.toUpperCase()}`} />
+      {player && <img src={players[player]} alt={`Jogador ${player.toUpperCase()}`} />}
     </button>
   );
 };
