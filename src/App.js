@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 import Input from "./objects/InputCheckbox";
+import TagGame from "./objects/TagGame";
 import LayerDark from "./objects/LayerDark";
 import HeaderInternal from "./components/HeaderInternal";
 import HeaderGame from "./components/HeaderGame";
@@ -19,6 +20,8 @@ const App = () => {
       <HeaderGame onClick={handleClickAdd} />
       <HashtagGame />
       <Input id="show" value="show" type="checkbox" content="Mostrar eventos" />
+
+      <TagGame content="Adicionou O" />
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
         <ProfileUser />
