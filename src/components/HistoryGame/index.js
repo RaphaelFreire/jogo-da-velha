@@ -30,7 +30,7 @@ const HistoryGame = () => (
       <TagGame content="Adicionou X" />
     </li>
     <li className="action">
-      <TagGame className="-end" content="Empate" />
+      <TagGame className="-end" content="Empate!" />
     </li>
   </ol>
 );
