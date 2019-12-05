@@ -1,12 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import './styles.css';
 import CardGame from "../../objects/CardGame";
 import PlayerGame from "../../objects/PlayerGame";
 
 
-const HashtagGame = () => (
-	<CardGame>
-            <ul className="hashtag-game">
+
+
+const HashtagGame = () => {
+
+      const [nextPlayer, setNextPlayer] = useState("x");
+
+
+      const handleClick = () => { 
+            console.log("Próximo Jogador", nextPlayer);
+
+            setNextPlayer ((old) => {
+              if (old === "x") {
+                return "o";
+              } else {
+                return "x";
+              }
+            })
+      }
+
+	return (<CardGame>
+            <ul className="hashtag-game" onClick = {handleClick} >
                   <li className="item"><PlayerGame /></li>
                   <li className="item"><PlayerGame /></li>
                   <li className="item"><PlayerGame /></li>
@@ -19,7 +37,9 @@ const HashtagGame = () => (
                   <li className="item"><PlayerGame /></li>
                   <li className="item"><PlayerGame /></li>
             </ul>
-	</CardGame>
-);
+      </CardGame>
+      );
+      
+}
 
 export default HashtagGame;
