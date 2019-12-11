@@ -11,14 +11,20 @@ import ProfileUser from "./components/ProfileUser";
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
+  const history = [];
 
   const handleClickAdd = () => setActiveAbout("-active");
   const handleClickRemove = () => setActiveAbout("");
 
+  const addHistory = player => {
+    history.push(`Adicionou ${player.toUpperCase()}`);
+    console.log(history);
+  };
+
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
-      <HashtagGame />
+      <HashtagGame callback={addHistory} />
       <InputCheckbox
         id="show"
         value="show"
@@ -26,7 +32,7 @@ const App = () => {
         content="Mostrar eventos"
       />
 
-      <HistoryGame />
+      <HistoryGame history={history} />
 
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove} />
