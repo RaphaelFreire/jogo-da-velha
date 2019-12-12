@@ -11,14 +11,13 @@ import ProfileUser from "./components/ProfileUser";
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
-  const history = [];
+  const [history, setHistory] = useState([]);
 
   const handleClickAdd = () => setActiveAbout("-active");
   const handleClickRemove = () => setActiveAbout("");
 
   const addHistory = player => {
-    history.push(`Adicionou ${player.toUpperCase()}`);
-    console.log(history);
+    setHistory(old => [...old, `Adicionou ${player.toUpperCase()}`]);
   };
 
   return (

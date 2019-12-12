@@ -14,7 +14,9 @@
   display: inline-block;
   box-sizing: border-box;
   width: 90vw;
+  max-width: 330px;
   height: 90vw;
+  max-height: 330px;
   margin-bottom: 40px;
 }
 
@@ -28,4 +30,15 @@
 
 .app > .input-game:checked ~ .history-game {
   display: block;
+}
+
+@media (min-width: 740px) {
+  .app > .header-game {
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
