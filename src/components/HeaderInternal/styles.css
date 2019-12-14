@@ -9,3 +9,19 @@
   margin-left: auto;
   margin-right: var(--spacing-small);
 }
+
+@media (min-width: 740px) {
+  .header-internal {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .header-internal > .logo-collab {
+    width: 230px;
+  }
+
+  .header-internal > .about-link {
+    font-size: var(--medium);
+  }
+}
