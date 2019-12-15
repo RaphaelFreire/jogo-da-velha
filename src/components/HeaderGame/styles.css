@@ -29,7 +29,7 @@
   }
 
   .header-game > .about-link {
-    font-size: var(--medium);
+    font-size: var(--size-medium);
   }
 
   .header-game > .menu-game {
